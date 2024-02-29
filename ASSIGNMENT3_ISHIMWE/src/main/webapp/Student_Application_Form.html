@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Application Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 400px;
+      width: 100%;
+      padding: 20px;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: calc(100% - 20px);
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="file"] {
+      margin-top: 10px; /* Increase the margin-top */
+      margin-bottom: 10px; /* Add margin-bottom for consistency */
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      display: block;
+      margin: 20px auto 0; /* Add margin-top and margin-bottom */
+      width: 100%;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Student Application Form</h2>
+  <form action="upload" method="post" enctype="multipart/form-data">
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="firstname" required>
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="passport">Passport Picture:</label>
+    <input type="file" id="passport" name="passport" accept="image/*" required>
+
+    <!-- Add space between "Certificate PDF" label and "Choose File" button -->
+    <div style="margin-bottom: 10px;"></div>
+
+    <label for="certificate">Certificate PDF:</label>
+    <input type="file" id="certificate" name="certificate" accept=".pdf" required>
+
+    <!-- Add space between "Certificate PDF" input field and "Submit Application" button -->
+    <div style="margin-bottom: 20px;"></div>
+
+    <button type="submit">Submit Application</button>
+  </form>
+</div>
+
+</body>
+</html>

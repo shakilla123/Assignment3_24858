@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif; /* Use a common font for better compatibility */
+    background-color: #f2f2f2; /* Set a light background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.container {
+    max-width: 600px; /* Limit container width */
+    margin: auto; /* Center the container horizontally */
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff; /* Set background color for the form */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    padding: 20px;
+}
+
+h2 {
+    color: #333; /* Set color for headings */
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #5d4037; /* Set dark chocolate button color */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #432e26; /* Darken button color on hover */
+}
+
+a {
+    color: #007bff; /* Set link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline link on hover */
+}
